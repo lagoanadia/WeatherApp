@@ -2,7 +2,6 @@
 
 A vanilla JavaScript weather app built from scratch. Search any city and get current weather data in real time.
 
-**[Live demo →](#)** *(add your GitHub Pages link here)*
 
 ---
 
