@@ -1,5 +1,3 @@
-const API_KEY = 'ad4acdc3debef01889ee157a6e592b80';
-
 // ── Grab elements ──
 let input       = document.getElementById("input");
 let search      = document.getElementById("searchIcn");
@@ -22,7 +20,7 @@ search.addEventListener("click", () => {
     let location = input.value.trim();
     if (!location) return;
 
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}&units=metric`;
+    let url = `/api/weather?location=${encodeURIComponent(location)}`;
 
     fetch(url)
         .then(function(response) {
